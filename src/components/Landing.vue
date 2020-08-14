@@ -5,65 +5,51 @@
         Üdvözöl a
         <strong class="purple_font">Junior Akadémia</strong>
       </h1>
-<!--
-      <button
-        id="back"
-        class="carousel_nav"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="prev"
-      ></button>
-      <button
-        id="forward"
-        class="carousel_nav"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="next"
-      ></button>
 
-      
-      <div class="carousel_img_holder">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          style="width: 100%; height: 100%; margin: 0;"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="carousel_img" ) style="background-image: url('pics/carousel/pics1.jpg')">
-                <button class="subscribe_btn" onclick="window.open('subscribe.html','_self')">
-                  Feliratkozok a
-                  hírlevélre!
-                </button>
-              </div>
-            </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="pics1">
+            
+            <h2 class="title">Alma</h2>
+          </div>
+          <div class="carousel-item" id="pics2">
 
-            <div class="carousel-item">
-              <div class="carousel_img" ) style="background-image: url('pics/carousel/pics2.jpg')">
-                <div class="slide2_content">
-                  <h3 class="title">Felvételi előkészítő</h3>
-                  <p>
-                    <b>4.-8. osztályos gyerekeknek</b>
-                    <br />
-                    <br />A középiskolai felvételi előkészítő foglalkozásaink alatt a
-                    felvételi feladatsorok kérdéseinek megfelelő kompetenciákat is fejlesztjük.
-                    Ilyen például a logikai problémafelismerő és megoldó képesség.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item"></div>
+          </div>
+          <div class="carousel-item" id="pics3">
           </div>
         </div>
-      </div>-->
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
+
+    <div class="mandatory">
+      ©2020 Junior Akadémia <br>
+      <router-link to="/">ÁSZF</router-link>
+      <router-link to="/">Adatkezelési Nyilatkozat</router-link>
+    </div>
+
   </div>
 </template>
 
@@ -71,20 +57,11 @@
 export default {};
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 :root {
-      --my_green: #64B350;
-      --my_purple: #963CBA;
-      --my_blue: #34A4DD;
-  }
-
-.page {
-  display: none;
-  width: 100vw;
-  height: calc(100vh - 84.5px);
-  position: absolute;
+  --my_green: #64b350;
+  --my_purple: #963cba;
+  --my_blue: #34a4dd;
 }
 
 #landing_page {
@@ -121,38 +98,8 @@ export default {};
   color: var(--my_purple);
 }
 
-.basics {
-  width: 250px;
-  margin: auto;
-  font-size: 14px;
-  text-align: center;
-  margin-top: 50px;
-  color: white;
-}
-
-.basics a {
-  color: white;
-  text-decoration: underline;
-}
-
 #navbarSupportedContent {
   margin-left: 15vw;
-}
-
-.carousel_img_holder {
-  max-width: 868px;
-  width: 50vw;
-  height: 500px;
-  background-color: gray;
-  margin: auto;
-}
-
-.carousel_img {
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  height: 500px;
-  width: 100%;
 }
 
 .subscribe_btn {
@@ -174,71 +121,31 @@ export default {};
   color: white;
 }
 
-.carousel_nav {
-  height: 70px;
-  width: 45px;
-  margin-top: 200px;
-  background-image: url("../assets/lila.png");
+.carousel{
+  width: 80vw;
+  min-width: 500px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.carousel-item{
+  background-color: gray;
+  height: 500px;
   background-size: cover;
   background-position: center;
-  border: none;
-  background-color: rgba(255, 255, 255, 0);
 }
 
-#back {
-  float: left;
-  margin-left: 10vw;
-  transform: rotate(180deg);
+#pics1{
+  background-image: url("../assets/carousel/pics1.jpg");
+}
+#pics2{
+    background-image: url("../assets/carousel/pics2.jpg");
+}
+#pics2{
+  
 }
 
-#forward {
-  float: right;
-  margin-right: 10vw;
-}
-
-.slide2_content {
-  height: 100%;
-  width: 40%;
-  background-color: rgba(255, 255, 255, 0.7);
-  float: right;
-  padding: 20px;
-}
-
-.slide2_content p {
-  line-height: 20px;
-  padding-top: 2vw;
-}
-
-@media screen and (max-width: 800px) {
-  .carousel_img_holder {
-    max-width: 868px;
-    width: 80vw;
-    height: 400px;
-    margin: auto;
-  }
-
-  .carousel_img {
-    height: 400px;
-  }
-
-  .subscribe_btn {
-    margin-top: 300px;
-  }
-
-  .carousel_nav {
-    display: none;
-  }
-
-  .carousel-indicators {
-    display: none;
-  }
-
-  .slide2_content {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width:650px) {
   .landing_board {
     margin-top: 20px;
     height: 500px;
@@ -248,14 +155,18 @@ export default {};
     font-size: 24px;
   }
 
-  .basics {
-    width: 100vw;
-    font-size: 10px;
-    margin-top: 10px;
-    text-align: center;
-  }
   .subscribe_btn {
     margin-top: 50px;
   }
+
+  .carousel{
+    min-width: 90vw; 
+  }
+
+  .carousel-item{
+    height: 400px;
+  }
+
+
 }
 </style>

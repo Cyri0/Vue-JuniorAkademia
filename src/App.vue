@@ -36,11 +36,7 @@
   </nav>
     <router-view/>
 
-    <div class="basics">
-      ©2020 Junior Akadémia <br>
-      <a href="#">ÁSZF</a>
-      <a href="#">Adatkezelési Nyilatkozat</a>
-    </div>
+
   </div>
 </template>
 
@@ -59,6 +55,12 @@ export default {
       --my_purple: #963CBA;
       --my_blue: #34A4DD;
   }
+
+.page {
+  width: 100vw;
+  min-height: calc(100vh - 84.5px);
+  position: absolute;
+}
 
 .navbar_logo{
     width: 150px;
@@ -111,6 +113,18 @@ export default {
     #navbarSupportedContent{
         margin-left: 4vw;
     }
+}
+
+.mandatory{
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.mandatory a {
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 </style>

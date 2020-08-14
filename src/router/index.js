@@ -8,6 +8,7 @@ import Camp from '@/components/Camp'
 import Orientation from '@/components/Orientation'
 import Robotics from '@/components/Robotics'
 import Lang from '@/components/Lang'
+import DataManagementStatement from '@/components/DataManagementStatement'
 
 Vue.use(Router)
 
@@ -47,6 +48,11 @@ export default new Router ({
             path: '/languages',
             name: 'Lang',
             component: Lang
+        },
+        {
+            path: '/DataManagementStatement',
+            name: 'DataManagementStatement',
+            component: DataManagementStatement
         }
     ]
 
