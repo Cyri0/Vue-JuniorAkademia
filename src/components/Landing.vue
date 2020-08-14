@@ -1,6 +1,6 @@
 <template>
-  <div id="landing_page" class="page fade_in_anim">
-    <div class="landing_board">
+  <div class="page blue_page">
+    <div class="board">
       <h1 class="title blue_font" id="title">
         Üdvözöl a
         <strong class="purple_font">Junior Akadémia</strong>
@@ -15,7 +15,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active" id="pics1">
             
-            <h2 class="title">Alma</h2>
+            <!--<h2 class="title">Alma</h2> -->
           </div>
           <div class="carousel-item" id="pics2">
 
@@ -46,8 +46,8 @@
 
     <div class="mandatory">
       ©2020 Junior Akadémia <br>
-      <router-link to="/">ÁSZF</router-link>
-      <router-link to="/">Adatkezelési Nyilatkozat</router-link>
+      <router-link to="/DataManagementStatement/aszf">ÁSZF</router-link>
+      <router-link to="/DataManagementStatement/adatkezelesinyilatkozat">Adatkezelési Nyilatkozat</router-link>
     </div>
 
   </div>
@@ -62,28 +62,6 @@ export default {};
   --my_green: #64b350;
   --my_purple: #963cba;
   --my_blue: #34a4dd;
-}
-
-#landing_page {
-  background-color: var(--my_blue);
-}
-
-.landing_board {
-  width: 95vw;
-  height: 600px;
-  background-color: white;
-  margin: auto;
-  margin-top: 112px;
-
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
-}
-
-.title {
-  text-align: center;
-  font-family: "Audiowide", cursive;
-  padding-top: 25px;
 }
 
 .green_font {
@@ -146,14 +124,6 @@ export default {};
 }
 
 @media screen and (max-width:650px) {
-  .landing_board {
-    margin-top: 20px;
-    height: 500px;
-  }
-
-  .title {
-    font-size: 24px;
-  }
 
   .subscribe_btn {
     margin-top: 50px;

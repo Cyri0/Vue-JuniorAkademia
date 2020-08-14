@@ -31,7 +31,7 @@
           <router-link to="/languages">Nyelvek</router-link>
         </li>
       </ul>
-        <button class="apply_btn" onclick="window.open('apply.html','_self')">Jelentkezés</button>
+      <router-link to="/apply" tag="button" class="apply_btn">Jelentkezés</router-link>
     </div>
   </nav>
     <router-view/>
@@ -60,6 +60,42 @@ export default {
   width: 100vw;
   min-height: calc(100vh - 84.5px);
   position: absolute;
+}
+
+.blue_page {
+  background-color: var(--my_blue);
+}
+
+.green_page {
+  background-color: var(--my_green);
+}
+
+.purple_page {
+  background-color: var(--my_purple);
+}
+
+.board{
+  width: 95vw;
+  min-height: 600px;
+  background-color: white;
+  margin: auto;
+  margin-top: 112px;
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  text-align: center;
+  font-family: "Audiowide", cursive;
+  padding-top: 25px;
+}
+
+@media screen and (max-width:650px) {
+  .title {
+    font-size: 24px;
+  }
 }
 
 .navbar_logo{

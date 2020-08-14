@@ -9,6 +9,7 @@ import Orientation from '@/components/Orientation'
 import Robotics from '@/components/Robotics'
 import Lang from '@/components/Lang'
 import DataManagementStatement from '@/components/DataManagementStatement'
+import Apply from '@/components//Apply'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ export default new Router ({
             path: '/DataManagementStatement',
             name: 'DataManagementStatement',
             component: DataManagementStatement
+        },
+        {
+            path: '/apply',
+            name: 'Apply',
+            component: Apply
         }
     ]
 
