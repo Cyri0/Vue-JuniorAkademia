@@ -1,6 +1,6 @@
 <template>
   <div class="page blue_page">
-    <div class="board">
+    <div class="board landing_board">
       <h1 class="title blue_font" id="title">
         Üdvözöl a
         <strong class="purple_font">Junior Akadémia</strong>
@@ -64,16 +64,8 @@ export default {};
   --my_blue: #34a4dd;
 }
 
-.green_font {
-  color: var(--my_green);
-}
-
-.blue_font {
-  color: var(--my_blue);
-}
-
-.purple_font {
-  color: var(--my_purple);
+.landing_board{
+  margin-top: 112px;
 }
 
 #navbarSupportedContent {

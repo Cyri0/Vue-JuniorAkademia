@@ -34,8 +34,8 @@
       <router-link to="/apply" tag="button" class="apply_btn">Jelentkezés</router-link>
     </div>
   </nav>
-    <router-view/>
 
+    <router-view/>
 
   </div>
 </template>
@@ -62,6 +62,18 @@ export default {
   position: absolute;
 }
 
+.green_font {
+  color: var(--my_green);
+}
+
+.blue_font {
+  color: var(--my_blue);
+}
+
+.purple_font {
+  color: var(--my_purple);
+}
+
 .blue_page {
   background-color: var(--my_blue);
 }
@@ -79,7 +91,7 @@ export default {
   min-height: 600px;
   background-color: white;
   margin: auto;
-  margin-top: 112px;
+  margin-top: 50px;
 
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
