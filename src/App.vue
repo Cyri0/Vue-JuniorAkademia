@@ -21,6 +21,8 @@
         <li class="nav-item">
           <router-link to="/camp">Táborok</router-link>
         </li>
+
+        <!--
         <li class="nav-item">
           <router-link to="/orientation">Pályaválasztás</router-link>
         </li>
@@ -30,6 +32,7 @@
         <li class="nav-item">
           <router-link to="/languages">Nyelvek</router-link>
         </li>
+        -->
       </ul>
       <router-link to="/apply" tag="button" class="apply_btn">Jelentkezés</router-link>
     </div>

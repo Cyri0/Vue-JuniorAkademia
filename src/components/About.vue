@@ -61,11 +61,37 @@
             <div class="minipics" id="miniprofile4"></div>
             <h4>Johnny English</h4>
           </div>
+          <div class="col-s col-lg-12 placeholder"></div> 
+          <div class="col-s col-lg-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.7325308953814!2d21.61244861597832!3d47.53407007917999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47470e08ed27d2b7%3A0x254e775fd860e36!2sDebrecen%2C%20Mester%20u.%2039%2C%204026!5e0!3m2!1shu!2shu!4v1598099693757!5m2!1shu!2shu" class="map" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <div class="col-s col-lg-6">
+            
+            <h2>Lépj velünk kapcsolatba!</h2>
+            <div class="form-group">
+              <label for="">Név</label>
+              <input type="name" class="form-control" name="name" id="" placeholder="">
+              <label for="">Email</label>
+              <input type="email" class="form-control" name="email" id="" placeholder="">
+              <label for="">Üzenet</label>
+              <textarea class="form-control"></textarea>
+
+              <button class="btn btn-success" type="submit" value="Submint">Elküldöm</button>
+            </div>
+
+
+
+          </div>
 
           <div class="col-s col-lg-12 placeholder"></div>
+
         </div>
       </div>
     </div>
+
+
+
+
 
     <div class="mandatory">
       ©2020 Junior Akadémia
@@ -146,5 +172,32 @@ h4 {
 }
 #miniprofile4 {
   background-image: url("../assets/pics/minipics4.jpg");
+}
+
+.form-group button{
+  margin-top: 20px;
+  float: right;
+}
+
+.map{
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (max-width:991px) {
+  .map {
+    max-width: 350px;
+    min-height: 350px;
+    margin-left: calc(50% - 175px);
+    margin-bottom: 50px;
+  }
+
+  .form-group button{
+  margin-top: 20px;
+
+  width: 200px;
+  height: 60px;
+  float: right;
+  }
 }
 </style>
