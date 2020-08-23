@@ -13,14 +13,20 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active" id="pics1">
-            
-            <!--<h2 class="title">Alma</h2> -->
-          </div>
+          <div class="carousel-item active" id="pics1"></div>
           <div class="carousel-item" id="pics2">
-
+            <div class="description">
+              <h2>Felvételi előkészítők</h2>
+              <p>4.-8. osztályos gyerekeknek</p>
+              <p>A középiskolai felvételi előkészítő foglalkozásaink alatt a felvételi feladatsorok kérdéseinek megfelelő kompetenciákat is fejlesztjük. Ilyen például a logikai problémafelismerő és megoldó képesség.</p>
+            </div>
           </div>
           <div class="carousel-item" id="pics3">
+            <div class="description">
+              <h2>Nyári táborok</h2>
+              <p>Nyári táborainkban tematikus programokkal várjuk a különböző érdeklődési körrel rendelkező gyerekeket befejezett első osztályos kortól.</p>
+              <p>Változatos és egészséges étkezés, szabadidős programok.</p>
+            </div>
           </div>
         </div>
         <a
@@ -45,11 +51,11 @@
     </div>
 
     <div class="mandatory">
-      ©2020 Junior Akadémia <br>
+      ©2020 Junior Akadémia
+      <br />
       <router-link to="/DataManagementStatement/aszf">ÁSZF</router-link>
       <router-link to="/DataManagementStatement/adatkezelesinyilatkozat">Adatkezelési Nyilatkozat</router-link>
     </div>
-
   </div>
 </template>
 
@@ -64,7 +70,7 @@ export default {};
   --my_blue: #34a4dd;
 }
 
-.landing_board{
+.landing_board {
   margin-top: 112px;
 }
 
@@ -91,44 +97,85 @@ export default {};
   color: white;
 }
 
-.carousel{
+.carousel {
   width: 80vw;
   min-width: 500px;
   max-width: 1000px;
   margin: auto;
 }
 
-.carousel-item{
+.carousel-item {
   background-color: gray;
   height: 500px;
   background-size: cover;
   background-position: center;
 }
 
-#pics1{
+#pics1 {
   background-image: url("../assets/carousel/pics1.jpg");
 }
-#pics2{
-    background-image: url("../assets/carousel/pics2.jpg");
+#pics2 {
+  background-image: url("../assets/carousel/pics2.jpg");
 }
-#pics2{
-  
+#pics3 {
+  background-image: url("../assets/carousel/pics3.jpg");
 }
 
-@media screen and (max-width:650px) {
+.description {
+  width: 40%;
+  height: 85%;
+  margin-top: 2.5%;
+  margin-right: 100px;
+  float: right;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50px 0px 50px 0px;
+  padding: 15px;
+}
 
+.description h2 {
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .description h2 {
+    margin-top: 90px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .description {
+    margin-right: 50px;
+  }
+
+  .description p {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .description h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .description p {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 650px) {
   .subscribe_btn {
     margin-top: 50px;
   }
 
-  .carousel{
-    min-width: 90vw; 
+  .carousel {
+    min-width: 90vw;
   }
 
-  .carousel-item{
+  .carousel-item {
     height: 400px;
   }
-
-
 }
 </style>
