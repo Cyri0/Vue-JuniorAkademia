@@ -1,5 +1,6 @@
 import Vue from 'vue/dist/vue.js'
 import Router from 'vue-router'
+import vueHeadful from 'vue-headful';
 
 import Landing from '@/components/Landing'
 import About from '@/components/About'
@@ -11,6 +12,7 @@ import Lang from '@/components/Lang'
 import DataManagementStatement from '@/components/DataManagementStatement'
 import Apply from '@/components//Apply'
 
+Vue.component('vue-headful', vueHeadful);
 Vue.use(Router)
 
 export default new Router ({
