@@ -5,6 +5,7 @@
 
       <div class="container centered">
         <div class="row">
+        <!--  
           <div class="col-md-6 col-lg-4 picsholder">
             <div class="profile_pics" id="pics1"></div>
           </div>
@@ -21,19 +22,24 @@
               Pellentesque vitae nisl eleifend, sollicitudin neque vel, dapibus magna. Maecenas sit amet hendrerit ex. Aliquam erat volutpat.
             </p>
           </div>
+          -->
 
           <div class="col-md-6 col-lg-8 highlighted">
-            <h3 class="title">John Doe</h3>
+            <!-- <h3 class="title">Borbély Aranka</h3> -->
+
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat aliquet magna quis pharetra. Aliquam erat volutpat.
-              Curabitur sollicitudin vitae neque sed consequat. Sed est ipsum, rutrum et libero in, ullamcorper dictum diam. Morbi rhoncus orci ex,
-              a venenatis nisi aliquet vel.
+              A középiskolai felvételik nagy izgalmat és kihívást jelentenek a szülőknek és a gyerekeknek egyaránt. Három gyermekes édesanyaként jómagam már háromszor éltem meg ezt a felkészülési időszakot. Mindhárom alkalommal ugyanúgy izgultam, hogy a gyerekeimnek sikerüljön bekerülni a kiválasztott középiskolába. Sokszor éreztem úgy: jól jött volna valami plusz támogatás a gyerekeimnek is és nekem is.
+Ezekben a gondolatokban az is megerősített, hogy a Logiscool Dunakeszi tulajdonosaként az elmúlt években sok szülővel és gyerekkel kerültem kapcsolatba. A beszélgetéseink során kiderült, mások is úgy érzik, hogy nagy igény lenne kis csoportos középiskolai felvételi előkészítőkre. A szülőknek örülnének annak is, ha segítséget kaphatnának a középiskolák kiválasztásában, valamint abban, hogy megfelelően tudják támogatni a gyerekeket a tanulásban, vagy akár az önbizalmuk megerősítésében.
+
             </p>
 
             <p>
-              Integer consequat ornare magna ac laoreet. Maecenas nec nisi diam. Integer pretium dui ligula, vel dignissim felis commodo in.
-              Pellentesque vitae nisl eleifend, sollicitudin neque vel, dapibus magna. Maecenas sit amet hendrerit ex. Aliquam erat volutpat.
+Kiváló, nagy tapasztalattal rendelkező pedagógus kollégákkal összefogva 2019. szeptemberében úgy döntöttünk: belevágunk. Az elmúlt egy év eredményei azt mutatják: nem hiába.
             </p>
+
+            <p class="right name">Borbély Aranka</p>
+            <p class="right titulus">iskolavezető</p>
+
           </div>
 
           <div class="col-md-6 col-lg-4 picsholder">
@@ -78,8 +84,6 @@
 
               <button class="btn btn-success" type="submit" value="Submint">Elküldöm</button>
             </div>
-
-
 
           </div>
 
@@ -146,6 +150,19 @@ export default {};
 
 h4 {
   text-align: center;
+}
+
+.right{
+  text-align: right;
+}
+
+.name{
+  font-weight: bold;
+  margin-bottom: -5px;
+}
+
+.titulus{
+  margin-right: 15px;
 }
 
 .minipics {

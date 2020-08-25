@@ -12,7 +12,7 @@
           <div class="col-lg-12"></div>
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="name">Név</label>
+              <label for="name">*Név</label>
               <input
                 type="text"
                 v-model="name"
@@ -21,7 +21,7 @@
                 id="name"
                 aria-describedby="name"
               />
-              <label for="email">Email</label>
+              <label for="email">*Email</label>
               <input
                 type="email"
                 class="form-control"
@@ -30,11 +30,21 @@
                 aria-describedby="emailHelpId"
                 v-model="email"
               />
+
+              <label for="phone">*Telefonszám</label>
+              <input
+                type="tel"
+                class="form-control"
+                name="phone"
+                id="phone"
+                aria-describedby="emailHelpId"
+                v-model="phone"
+              />
             </div>
 
             <form>
               <div class="form-group">
-                <label for="typeSelector">Mire szeretne jelentkezni?</label>
+                <label for="typeSelector">*Mire szeretne jelentkezni?</label>
                 <select
                   class="form-control"
                   id="typeSelector"
@@ -47,7 +57,7 @@
               </div>
 
               <div class="form-group" v-bind:class="{ hide: prepareHide}">
-                <label for="prepareTypeSelector">Előkészítők</label>
+                <label for="prepareTypeSelector">*Előkészítők</label>
                 <select class="form-control" id="prepareTypeSelector" v-model="narrow_type">
                   <option value="math_prep" data-foo="math_prep">matek</option>
                   <option balue="hun_prep" data-foo="hun_prep">magyar</option>
@@ -55,7 +65,7 @@
               </div>
 
               <div class="form-group" v-bind:class="{ hide: campHide}">
-                <label for="campTypeSelector">Táborok</label>
+                <label for="campTypeSelector">*Táborok</label>
                 <select class="form-control" id="campTypeSelector" v-model="narrow_type">
                   <option value="photography_camp" data-foo="photography_camp">fotós tábor</option>
                   <option balue="video_camp" data-foo="video_camp">videóvágó tábor</option>
@@ -64,10 +74,9 @@
             </form>
           </div>
           <div class="col-sm-6">
-            
-<form>
+            <form>
               <div class="form-group">
-                <label for="typeSelector">Hányadik osztályos a gyermeke?</label>
+                <label for="typeSelector">*Hányadik osztályos a gyermeke?</label>
                 <select class="form-control" id="classSelector" v-model="kids_class">
                   <option>4</option>
                   <option>5</option>
@@ -79,8 +88,9 @@
             </form>
             <label for>Megjegyzések</label>
             <textarea class="form-control" v-model="comment"></textarea>
-            <br/><br/><br/>
-            Az
+            <br />
+            <br />
+            <br />Az
             <b>"Elküldöm"</b> gombra kattintva ön elfogadja az
             <a href="#">Adatkezelési Nyilatkozatot</a>!
             <button
@@ -90,7 +100,6 @@
               value="Submint"
               v-on:click="send"
             >Elküldöm</button>
-          
           </div>
         </div>
       </div>

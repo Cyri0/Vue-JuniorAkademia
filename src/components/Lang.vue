@@ -2,6 +2,15 @@
   <div class="page blue_page">
     <div class="board">
       <h1 class="title">Nyelvek</h1>
+
+      <div class="container">
+        <div class="row">
+          <div></div>
+        </div>
+      </div>
+
+
+
     </div>
     <div class="mandatory">
       ©2020 Junior Akadémia <br>

@@ -28,13 +28,14 @@
           <li class="nav-item">
             <router-link to="/matric">Felvételi előkészítők</router-link>
           </li>
-          <li class="nav-item">
+         
+          <!-- <li class="nav-item">
             <router-link to="/camp">Táborok</router-link>
-          </li>
+          </li> -->
 
-          <!--
+          
         <li class="nav-item">
-          <router-link to="/orientation">Pályaválasztás</router-link>
+          <router-link to="/orientation">Pályaorientáció</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/robotics">Robotika</router-link>
@@ -42,7 +43,6 @@
         <li class="nav-item">
           <router-link to="/languages">Nyelvek</router-link>
         </li>
-          -->
         </ul>
         <router-link to="/apply" tag="button" class="apply_btn">Jelentkezés</router-link>
       </div>
@@ -69,7 +69,7 @@ export default {
 
 .page {
   width: 100vw;
-  min-height: calc(100vh - 84.5px);
+  min-height: calc(100vh - 130px);
   position: absolute;
 }
 
@@ -130,6 +130,9 @@ export default {
 .nav-item {
   font-family: "Audiowide", cursive;
   margin: auto;
+
+  font-size: 18px;
+
   line-height: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -156,6 +159,10 @@ export default {
   font-family: "Audiowide", cursive;
   max-width: 250px;
   margin: auto;
+}
+
+#navbar{
+  height: 130px;
 }
 
 .apply_btn:hover {
