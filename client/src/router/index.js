@@ -10,7 +10,7 @@ import Orientation from '@/components/Orientation'
 import Robotics from '@/components/Robotics'
 import Lang from '@/components/Lang'
 import DataManagementStatement from '@/components/DataManagementStatement'
-import Apply from '@/components//Apply'
+import Apply from '@/components/Apply'
 
 Vue.component('vue-headful', vueHeadful);
 Vue.use(Router)
