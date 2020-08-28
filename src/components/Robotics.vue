@@ -2,6 +2,7 @@
   <div class="page purple_page">
     <div class="board">
       <h1 class="title">Robotika</h1>
+      <h2 class="fade-in">Hamarosan...</h2>
     </div>
     <div class="mandatory">
       ©2020 Junior Akadémia <br>
@@ -19,5 +20,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+h2{
+  margin-top: 150px;
+  text-align: center;
+}
 </style>

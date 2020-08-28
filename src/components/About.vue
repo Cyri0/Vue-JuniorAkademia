@@ -1,17 +1,19 @@
 <template>
   <div class="page green_page">
-    <div class="board">
+    <div class="board" id="about_board">
       <h1 class="title">Rólunk</h1>
 
       <div class="container centered">
         <div class="row">
           <div class="col-md-6 col-lg-8 highlighted">
             <p>
-              A középiskolai felvételik nagy izgalmat és kihívást jelentenek a szülőknek és a gyerekeknek egyaránt. Három gyermekes édesanyaként jómagam már háromszor éltem meg ezt a felkészülési időszakot. Mindhárom alkalommal ugyanúgy izgultam, hogy a gyerekeimnek sikerüljön bekerülni a kiválasztott középiskolába. Sokszor éreztem úgy: jól jött volna valami plusz támogatás a gyerekeimnek is és nekem is.
-              Ezekben a gondolatokban az is megerősített, hogy a Logiscool Dunakeszi tulajdonosaként az elmúlt években sok szülővel és gyerekkel kerültem kapcsolatba. A beszélgetéseink során kiderült, mások is úgy érzik, hogy nagy igény lenne kis csoportos középiskolai felvételi előkészítőkre. A szülőknek örülnének annak is, ha segítséget kaphatnának a középiskolák kiválasztásában, valamint abban, hogy megfelelően tudják támogatni a gyerekeket a tanulásban, vagy akár az önbizalmuk megerősítésében.
+              A középiskolai felvételi előtti évek, hónapok nagyon izgalmas időszakot és kihívást jelentenek a szülőknek, gyerekeknek egyaránt.
+              Kétgyermekes édesanyaként jómagam is átéltem és még fogom is, ezt a felkészülési periódust. Akárcsak a gyermekeink mi is ugyanúgy izgulunk,
+              hogy sikerüljön bekerülni a kiválasztott középiskolába. Sokszor éreztem úgy: jól jött volna valami plusz támogatás a gyerekemnek is és nekem is.
             </p>
-
-            <p>Kiváló, nagy tapasztalattal rendelkező pedagógus kollégákkal összefogva 2019. szeptemberében úgy döntöttünk: belevágunk. Az elmúlt egy év eredményei azt mutatják: nem hiába.</p>
+            <p>Ezzel kapcsolatos érzéseimet, gondolataimat az is megerősítette, hogy a Logiscool Debrecen tulajdonosaként az elmúlt években sok szülővel és gyermekkel kerültem kapcsolatba. A beszélgetéseink során kiderült, mások is úgy érzik, hogy nagy igény lenne kis csoportos középiskolai felvételi előkészítőkre. A szülők örülnének annak is, ha segítséget kaphatnának a középiskolák kiválasztásában, valamint abban, hogy megfelelően tudják támogatni a gyerekeket a tanulásban, vagy akár az önbizalmuk megerősítésében.</p>
+            <p>Több éves külföldi élet tapasztalata szerint, az iskolai nyelvtanulást is érdemes kiegészíteni, így erre is szeretnénk lehetőséget biztosítani.</p>
+            <p>Kiváló, több éves tapasztalattal rendelkező pedagógus kollégákkal összefogva úgy döntöttünk: belevágunk</p>
 
             <p class="right name">Borbély Aranka</p>
             <p class="right titulus">iskolavezető</p>
@@ -37,13 +39,14 @@
 
           <div class="col-md-6 col-lg-3 minipics_holder">
             <div class="minipics" id="miniprofile3"></div>
-            <h4>Nagy Dániel</h4>
-            <h5>mechatronikai mérnök</h5>
+            <h4>Dániel Szandra</h4>
+            <h5>Lilla Téri Általános Iskola - magyar műveltségi terület, fejlesztő pedagógus</h5>
           </div>
 
           <div class="col-md-6 col-lg-3 minipics_holder">
             <div class="minipics" id="miniprofile4"></div>
-            <h4>Johnny English</h4>
+            <h4>Nagy Dániel</h4>
+            <h5>mechatronikai mérnök</h5>
           </div>
           <div class="col-s col-lg-12 placeholder"></div>
           <div class="col-s col-lg-6">
@@ -64,11 +67,11 @@
               @submit.prevent="sendEmail"
               v-bind:class="{ hide: !formVisible}"
             >
-              <label for>Név</label>
+              <label for="name">Név</label>
               <input type="name" class="form-control" name="name" />
-              <label for>Email</label>
+              <label for="email">Email</label>
               <input type="email" class="form-control" name="email" />
-              <label for>Üzenet</label>
+              <label for="message">Üzenet</label>
               <textarea class="form-control" name="message"></textarea>
               <input type="submit" class="btn btn-success send_btn" value="Elküldöm" />
             </form>
@@ -81,8 +84,10 @@
               <img src="../assets/fail.png" class="sent_icon" />
               <h2 class="sent_text fail">
                 Nem sikerült elküldeni az üzenetet!
-                <br />Próbálkozzon újra később, vagy próbálja meg a
-                <a href="#">facebook oldalunkon</a>!
+                <br />Próbálkozz újra később, vagy próbáld meg a
+                <a
+                  href="https://www.facebook.com/Junior-Akad%C3%A9mia-107904784359368"
+                >facebook oldalunkon</a>!
               </h2>
             </div>
           </div>
@@ -186,19 +191,26 @@ export default {
   background-position: center;
 }
 
+#about_board {
+  max-width: 1300px;
+}
+
 .hide {
   display: none;
 }
 
-#pics1 {
-  background-image: url("../assets/pics/profile1.jpg");
-}
 #pics2 {
   background-image: url("../assets/pics/profile2.jpg");
 }
 
 h4 {
   text-align: center;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-top: 20px;
 }
 
 .right {
@@ -258,11 +270,11 @@ h4 {
   text-align: center;
 }
 
-.success{
+.success {
   color: var(--my_green);
 }
 
-.fail{
+.fail {
   color: darkred;
 }
 

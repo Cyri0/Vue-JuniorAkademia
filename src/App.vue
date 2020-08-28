@@ -91,14 +91,19 @@ export default {
 
 .blue_page {
   background-color: var(--my_blue);
-}
+background: linear-gradient(180deg, rgba(52,164,221,1) 0%, rgba(80,52,221,1) 100%); }
 
 .green_page {
-  background-color: var(--my_green);
+  /* background-color: var(--my_green); */
+
+background: rgb(100,179,80);
+background: linear-gradient(180deg, rgba(100,179,80,1) 0%, rgba(149,179,80,1) 100%); 
+
 }
 
 .purple_page {
   background-color: var(--my_purple);
+  background: linear-gradient(180deg, rgba(150,60,186,1) 0%, rgba(87,60,186,1) 100%); 
 }
 
 .board {

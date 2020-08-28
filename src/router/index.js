@@ -11,6 +11,7 @@ import Robotics from '@/components/Robotics'
 import Lang from '@/components/Lang'
 import DataManagementStatement from '@/components/DataManagementStatement'
 import Apply from '@/components//Apply'
+import GYIK from '@/components//GYIK'
 
 Vue.component('vue-headful', vueHeadful);
 Vue.use(Router)
@@ -61,6 +62,11 @@ export default new Router ({
             path: '/apply',
             name: 'Apply',
             component: Apply
+        },
+        {
+            path: '/gyik',
+            name: 'GYIK',
+            component: GYIK
         }
     ]
 

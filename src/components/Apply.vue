@@ -14,6 +14,7 @@
             <div class="form-group">
               <label for="name">*Név</label>
               <input
+              required
                 type="text"
                 v-model="name"
                 class="form-control"
@@ -23,6 +24,7 @@
               />
               <label for="email">*Email</label>
               <input
+              required
                 type="email"
                 class="form-control"
                 name="email"
@@ -33,6 +35,7 @@
 
               <label for="phone">*Telefonszám</label>
               <input
+              required
                 type="tel"
                 class="form-control"
                 name="phone"
@@ -46,6 +49,7 @@
               <div class="form-group">
                 <label for="typeSelector">*Mire szeretne jelentkezni?</label>
                 <select
+                required
                   class="form-control"
                   id="typeSelector"
                   @change="handleChange"
@@ -59,16 +63,16 @@
               <div class="form-group" v-bind:class="{ hide: prepareHide}">
                 <label for="prepareTypeSelector">*Előkészítők</label>
                 <select class="form-control" id="prepareTypeSelector" v-model="narrow_type">
-                  <option value="math_prep" data-foo="math_prep">matek</option>
-                  <option balue="hun_prep" data-foo="hun_prep">magyar</option>
+                  <option value="matek elokeszito" data-foo="math_prep">matek előkészítő</option>
+                  <option value="magyar elokeszito" data-foo="hun_prep">magyar előkészítő</option>
                 </select>
               </div>
 
               <div class="form-group" v-bind:class="{ hide: campHide}">
                 <label for="campTypeSelector">*Táborok</label>
                 <select class="form-control" id="campTypeSelector" v-model="narrow_type">
-                  <option value="photography_camp" data-foo="photography_camp">fotós tábor</option>
-                  <option balue="video_camp" data-foo="video_camp">videóvágó tábor</option>
+                  <option value="fotos tabor" data-foo="photography_camp">fotós tábor</option>
+                  <option value="videos tabor" data-foo="video_camp">videóvágó tábor</option>
                 </select>
               </div>
             </form>
@@ -77,7 +81,7 @@
             <form>
               <div class="form-group">
                 <label for="typeSelector">*Hányadik osztályos a gyermeke?</label>
-                <select class="form-control" id="classSelector" v-model="kids_class">
+                <select class="form-control" id="classSelector" v-model="kids_class" required>
                   <option>4</option>
                   <option>5</option>
                   <option>6</option>
@@ -150,9 +154,6 @@ export default {
       }
     },
     send() {
-      this.sended = true;
-      console.log("Message sended!");
-
       var data = {
         service_id: my_data[0].SERVICE_ID,
         template_id: my_data[0].TEMPLATE_ID_APPLY,
@@ -175,6 +176,8 @@ export default {
       })
         .done(function() {
           alert("Your mail is sent!");
+          this.sended = true;
+
         })
         .fail(function(error) {
           alert("Oops... " + JSON.stringify(error));

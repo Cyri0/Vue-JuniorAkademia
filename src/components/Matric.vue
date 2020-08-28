@@ -5,30 +5,34 @@
       <div class="container">
         <div class="row">
           <div class="col-lg">
-            <img src="../assets/pics/4elokesztio.jpg" />
-            <h2 class="title">4. osztályosoknak felvételi előkészítő</h2>
-            <p>Szeptember 14-től 15 alkalmas, 2 órás komplex 8 osztályos gimnáziumi előkészítőt indítunk, 4. osztályosok részére. Minden alkalommal foglalkozunk matematikával és magyar nyelvvel is.</p>
-            <p>Max. 6-12 fős kis csoportokban.</p>
+            <img src="../assets/pics/matek_elokeszito.jpg" />
+            <h2 class="title">Matematika felvételi előkészítő</h2>
+            <p>Szeptember 14-től 15 alkalmas előkészítő csoportokat indítunk 6. és 8. osztályosok részére. A foglalkozásokat hetente tartjuk, és alkalmanként 1,5 órásak lesznek.</p>
+            <p>Max. 6-10 fős kis csoportokban.</p>
             <p>A pontos időpontok később kerülnek kihirdetésre.</p>
             <p class="price">Ár: 60.000 Ft</p>
             <p class="small">(15.000,- Ft/hó, 4 egyenlő részletben)</p>
-            <button class="reg_btn">Előjelentkezés</button>
-            <button class="gyik_btn">Gyakori kérdések</button>
+            <router-link to="/apply" tag="button" class="reg_btn">Előjelentkezés</router-link>
+            <router-link to="/gyik" tag="button" class="gyik_btn">Gyakori kérdések</router-link>
           </div>
 
           <div class="col-lg">
-            <img src="../assets/pics/4elokesztio.jpg" />
-            <h2 class="title">4. osztályosoknak felvételi előkészítő</h2>
-            <p>Szeptember 14-től 15 alkalmas, 2 órás komplex 8 osztályos gimnáziumi előkészítőt indítunk, 4. osztályosok részére. Minden alkalommal foglalkozunk matematikával és magyar nyelvvel is.</p>
+            <img src="../assets/pics/magyar_elokeszito.jpg" />
+            <h2 class="title">Magyar felvételi előkészítő</h2>
+            <p>
+              Szeptember 14-től 15 alkalmas előkészítő csoportokat indítunk 6. és 8. osztályosok részére.
+              A foglalkozásokat hetente tartjuk, és alkalmanként 1,5 órásak lesznek.
+            </p>
             <p>Max. 6-12 fős kis csoportokban.</p>
             <p>A pontos időpontok később kerülnek kihirdetésre.</p>
             <p class="price">Ár: 60.000 Ft</p>
             <p class="small">(15.000,- Ft/hó, 4 egyenlő részletben)</p>
-            <button class="reg_btn">Előjelentkezés</button>
-            <button class="gyik_btn">Gyakori kérdések</button>
+            <router-link to="/apply" tag="button" class="reg_btn">Előjelentkezés</router-link>
+            <router-link to="/gyik" tag="button" class="gyik_btn">Gyakori kérdések</router-link>
+
           </div>
 
-          <div class="col-lg">
+          <!-- <div class="col-lg">
             <img src="../assets/pics/4elokesztio.jpg" />
             <h2 class="title">4. osztályosoknak felvételi előkészítő</h2>
             <p>Szeptember 14-től 15 alkalmas, 2 órás komplex 8 osztályos gimnáziumi előkészítőt indítunk, 4. osztályosok részére. Minden alkalommal foglalkozunk matematikával és magyar nyelvvel is.</p>
@@ -36,9 +40,9 @@
             <p>A pontos időpontok később kerülnek kihirdetésre.</p>
             <p class="price">Ár: 60.000 Ft</p>
             <p class="small">(15.000,- Ft/hó, 4 egyenlő részletben)</p>
-            <button class="reg_btn">Előjelentkezés</button>
+            <router-link to="/apply" tag="button" class="reg_btn">Előjelentkezés</router-link>
             <button class="gyik_btn">Gyakori kérdések</button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -65,24 +69,22 @@ export default {};
   background-color: white;
   color: black;
   margin-bottom: 50px;
-
 }
 
-
-.board{
+.board {
   background-color: rgba(0, 0, 0, 0);
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.0);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.0);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.0);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0);
 }
 
-h1{
+h1 {
   color: white;
 }
 
 .row div img {
   width: 100%;
-  border-radius: 10px 10px 0px 0px; 
+  border-radius: 10px 10px 0px 0px;
 }
 
 .row div h2 {
