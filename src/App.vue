@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <vue-headful title="Junior Akadémia"/>
+    <vue-headful title="Junior Akadémia" />
     <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
       <a class="navbar-brand" href="#">
         <img class="navbar_logo" src="./assets/logo.png" />
@@ -28,21 +28,20 @@
           <li class="nav-item">
             <router-link to="/matric">Felvételi előkészítők</router-link>
           </li>
-         
+
           <!-- <li class="nav-item">
             <router-link to="/camp">Táborok</router-link>
-          </li> -->
+          </li>-->
 
-          
-        <li class="nav-item">
-          <router-link to="/orientation">Pályaorientáció</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link to="/robotics">Robotika</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link to="/languages">Nyelvek</router-link>
-        </li>
+          <li class="nav-item">
+            <router-link to="/orientation">Pályaorientáció</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/robotics">Robotika</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/languages">Nyelvek</router-link>
+          </li>
         </ul>
         <router-link to="/apply" tag="button" class="apply_btn">Jelentkezés</router-link>
       </div>
@@ -54,6 +53,11 @@
 
 <script>
 export default {
+  data(){
+    return{
+
+    };
+  },
   name: "app"
 };
 </script>
@@ -132,8 +136,8 @@ export default {
   margin: auto;
 
   font-size: 18px;
-
   line-height: 100%;
+
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -161,7 +165,7 @@ export default {
   margin: auto;
 }
 
-#navbar{
+#navbar {
   height: 130px;
 }
 
@@ -180,6 +184,12 @@ export default {
   }
 }
 
+@media screen and (max-width: 1199px){
+  #navbar {
+  height: auto;
+}
+}
+
 .mandatory {
   text-align: center;
   color: white;
@@ -190,5 +200,37 @@ export default {
   color: white;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.fade-in {
+animation: fadeIn ease 2s;
+-webkit-animation: fadeIn ease 2s;
+-moz-animation: fadeIn ease 2s;
+-o-animation: fadeIn ease 2s;
+-ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
 </style>
