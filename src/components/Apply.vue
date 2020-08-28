@@ -115,6 +115,8 @@
 
 <script>
 import my_data from "../my_data.json";
+import $ from 'jquery';
+
 export default {
   
   data() {
@@ -166,17 +168,17 @@ export default {
 
       console.log(data);
 
-      // $.ajax("https://api.emailjs.com/api/v1.0/email/send", {
-      //   type: "POST",
-      //   data: JSON.stringify(data),
-      //   contentType: "application/json"
-      // })
-      //   .done(function() {
-      //     alert("Your mail is sent!");
-      //   })
-      //   .fail(function(error) {
-      //     alert("Oops... " + JSON.stringify(error));
-      //   });
+      $.ajax("https://api.emailjs.com/api/v1.0/email/send", {
+        type: "POST",
+        data: JSON.stringify(data),
+        contentType: "application/json"
+      })
+        .done(function() {
+          alert("Your mail is sent!");
+        })
+        .fail(function(error) {
+          alert("Oops... " + JSON.stringify(error));
+        });
     }
   }
 };
