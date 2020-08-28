@@ -55,7 +55,7 @@
                   @change="handleChange"
                   v-model="type"
                 >
-                  <option value="tabor" data-foo="tabor">Tábor</option>
+                  <option value="language" data-foo="language">Nyelvek</option>
                   <option balue="elokeszito" data-foo="elokeszito">Felvételi előkészítő</option>
                 </select>
               </div>
@@ -69,10 +69,18 @@
               </div>
 
               <div class="form-group" v-bind:class="{ hide: campHide}">
-                <label for="campTypeSelector">*Táborok</label>
+                <label for="campTypeSelector">*Nyelvek</label>
                 <select class="form-control" id="campTypeSelector" v-model="narrow_type">
-                  <option value="fotos tabor" data-foo="photography_camp">fotós tábor</option>
-                  <option value="videos tabor" data-foo="video_camp">videóvágó tábor</option>
+
+                  <option value="angol kezdo" data-foo="angol kezdo">angol kezdő</option>
+
+                  <option value="angol halado" data-foo="angol halado">angol haladó</option>
+
+                  <option value="nemet kezdo" data-foo="nemet kezdo">német kezdő</option>
+
+                  <option value="nemet halado" data-foo="nemet halado">német haladó</option>
+
+                  <option value="nyelvvizsga felkeszito" data-foo="nyelvvizsga felkeszito">nyelvvizsga felkészítő</option>
                 </select>
               </div>
             </form>
@@ -147,7 +155,7 @@ export default {
           this.prepareHide = false;
         }
 
-        if (selectedType === "tabor") {
+        if (selectedType === "language") {
           this.campHide = false;
           this.prepareHide = true;
         }

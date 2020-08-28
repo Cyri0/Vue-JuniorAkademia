@@ -10,8 +10,8 @@
             <p>Szeptember 14-től 15 alkalmas előkészítő csoportokat indítunk 6. és 8. osztályosok részére. A foglalkozásokat hetente tartjuk, és alkalmanként 1,5 órásak lesznek.</p>
             <p>Max. 6-10 fős kis csoportokban.</p>
             <p>A pontos időpontok később kerülnek kihirdetésre.</p>
-            <p class="price">Ár: 60.000 Ft</p>
-            <p class="small">(15.000,- Ft/hó, 4 egyenlő részletben)</p>
+            <p class="price">Ár: 50.000 Ft</p>
+            <p class="small">(13.500,- Ft/hó, 4 egyenlő részletben)</p>
             <router-link to="/apply" tag="button" class="reg_btn">Előjelentkezés</router-link>
             <router-link to="/gyik" tag="button" class="gyik_btn">Gyakori kérdések</router-link>
           </div>
@@ -25,24 +25,12 @@
             </p>
             <p>Max. 6-12 fős kis csoportokban.</p>
             <p>A pontos időpontok később kerülnek kihirdetésre.</p>
-            <p class="price">Ár: 60.000 Ft</p>
-            <p class="small">(15.000,- Ft/hó, 4 egyenlő részletben)</p>
+            <p class="price">Ár: 50.000 Ft</p>
+            <p class="small">(13.500,- Ft/hó, 4 egyenlő részletben)</p>
             <router-link to="/apply" tag="button" class="reg_btn">Előjelentkezés</router-link>
             <router-link to="/gyik" tag="button" class="gyik_btn">Gyakori kérdések</router-link>
 
           </div>
-
-          <!-- <div class="col-lg">
-            <img src="../assets/pics/4elokesztio.jpg" />
-            <h2 class="title">4. osztályosoknak felvételi előkészítő</h2>
-            <p>Szeptember 14-től 15 alkalmas, 2 órás komplex 8 osztályos gimnáziumi előkészítőt indítunk, 4. osztályosok részére. Minden alkalommal foglalkozunk matematikával és magyar nyelvvel is.</p>
-            <p>Max. 6-12 fős kis csoportokban.</p>
-            <p>A pontos időpontok később kerülnek kihirdetésre.</p>
-            <p class="price">Ár: 60.000 Ft</p>
-            <p class="small">(15.000,- Ft/hó, 4 egyenlő részletben)</p>
-            <router-link to="/apply" tag="button" class="reg_btn">Előjelentkezés</router-link>
-            <button class="gyik_btn">Gyakori kérdések</button>
-          </div> -->
         </div>
       </div>
     </div>
