@@ -14,7 +14,7 @@
             <div class="form-group">
               <label for="name">*Név</label>
               <input
-              required
+                required
                 type="text"
                 v-model="name"
                 class="form-control"
@@ -24,7 +24,7 @@
               />
               <label for="email">*Email</label>
               <input
-              required
+                required
                 type="email"
                 class="form-control"
                 name="email"
@@ -35,7 +35,7 @@
 
               <label for="phone">*Telefonszám</label>
               <input
-              required
+                required
                 type="tel"
                 class="form-control"
                 name="phone"
@@ -49,7 +49,7 @@
               <div class="form-group">
                 <label for="typeSelector">*Mire szeretne jelentkezni?</label>
                 <select
-                required
+                  required
                   class="form-control"
                   id="typeSelector"
                   @change="handleChange"
@@ -72,7 +72,6 @@
               <div class="form-group" v-bind:class="{ hide: campHide}">
                 <label for="campTypeSelector">*Nyelvek</label>
                 <select class="form-control" id="campTypeSelector" v-model="narrow_type">
-
                   <option value="angol kezdo" data-foo="angol kezdo">angol kezdő</option>
 
                   <option value="angol halado" data-foo="angol halado">angol haladó</option>
@@ -81,7 +80,10 @@
 
                   <option value="nemet halado" data-foo="nemet halado">német haladó</option>
 
-                  <option value="nyelvvizsga felkeszito" data-foo="nyelvvizsga felkeszito">nyelvvizsga felkészítő</option>
+                  <option
+                    value="nyelvvizsga felkeszito"
+                    data-foo="nyelvvizsga felkeszito"
+                  >nyelvvizsga felkészítő</option>
                 </select>
               </div>
             </form>
@@ -104,8 +106,8 @@
             <br />
             <br />
             <br />Az
-            <b>"Elküldöm"</b> gombra kattintva ön elfogadja az 
-            <router-link to="/DataManagementStatement/">Adatkezelesi Nyilatkozatot</router-link>!
+            <b>"Elküldöm"</b> gombra kattintva ön elfogadja az
+            <router-link to="/DataManagementStatement/">Adatkezelési Nyilatkozatot</router-link>!
             <button
               class="btn btn-success right_float"
               id="send_btn"
@@ -120,17 +122,16 @@
     <div class="mandatory">
       ©2020 Junior Akadémia
       <br />
-      <router-link to="/DataManagementStatement/">ÁSZF és Adatkezelesi Nyilatkozat</router-link>
+      <router-link to="/DataManagementStatement/">ÁSZF és Adatkezelési Nyilatkozat</router-link>
     </div>
   </div>
 </template>
 
 <script>
 import my_data from "../my_data.json";
-import $ from 'jquery';
+import $ from "jquery";
 
 export default {
-  
   data() {
     return {
       name: "",
@@ -139,7 +140,7 @@ export default {
       type: "",
       narrow_type: "",
       comment: "",
-      phone:"",
+      phone: "",
       sended: false,
       prepareHide: true,
       campHide: false
@@ -154,7 +155,7 @@ export default {
         if (selectedType === "robotika") {
           this.campHide = true;
           this.prepareHide = true;
-          this.narrow_type = "mernoki elokeszito"
+          this.narrow_type = "mernoki elokeszito";
         }
 
         if (selectedType === "elokeszito") {
@@ -193,7 +194,6 @@ export default {
         .done(function() {
           alert("Your mail is sent!");
           this.sended = true;
-
         })
         .fail(function(error) {
           alert("Oops... " + JSON.stringify(error));

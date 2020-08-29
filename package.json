@@ -24,6 +24,7 @@
     "popper.js": "^1.16.1",
     "vue": "^2.6.11",
     "vue-headful": "^2.1.0",
+    "vue-meta": "^2.4.0",
     "vue-router": "^3.4.3"
   },
   "devDependencies": {

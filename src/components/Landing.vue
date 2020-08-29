@@ -53,13 +53,38 @@
     <div class="mandatory">
       ©2020 Junior Akadémia
       <br />
-      <router-link to="/DataManagementStatement/">ÁSZF és Adatkezelesi Nyilatkozat</router-link>
+      <router-link to="/DataManagementStatement/">ÁSZF és Adatkezelési Nyilatkozat</router-link>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+let ROOT_PATH = 'http://www.juniorakademia.hu'
+export default {
+  data() {
+    return {
+      logo: ROOT_PATH + require('../assets/logo.png')
+    }
+  },
+  metaInfo() {
+    return {
+      meta: [
+          // Twitter Card
+          {name: 'twitter:card', content: 'summary'},
+          {name: 'twitter:title', content: 'Junior Akadémia'},
+          {name: 'twitter:description', content: 'Felvételi előkészítők, nyelvtanulás és még sok más.'},
+          // image must be an absolute path
+          {name: 'twitter:image', content: this.logo},
+          // Facebook OpenGraph
+          {property: 'og:title', content: 'Junior Akadémia'},
+          {property: 'og:site_name', content: 'Vue Example'},
+          {property: 'og:type', content: 'website'},
+          {property: 'og:image', content:  this.logo},
+          {property: 'og:description', content: 'Felvételi előkészítők, nyelvtanulás és még sok más.'}
+      ]
+    }
+  }
+}
 </script>
 
 <style scoped>

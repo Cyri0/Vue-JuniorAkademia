@@ -4,6 +4,9 @@ import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap'
 
+import Meta from 'vue-meta';
+Vue.use(Meta);
+
 Vue.config.productionTip = false
 
 new Vue({

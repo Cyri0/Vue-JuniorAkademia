@@ -203,7 +203,9 @@ background: linear-gradient(180deg, rgba(100,179,80,1) 0%, rgba(149,179,80,1) 10
   width: 200px;
   margin-left: calc(50% - 100px);
 }
-
+.page{
+min-height: calc(100vh - 84px);
+}
 }
 
 .mandatory {
