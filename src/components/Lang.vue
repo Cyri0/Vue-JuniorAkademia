@@ -5,8 +5,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-12" id="head_kep">
-          </div>
+          <div class="col-md-12" id="head_kep"></div>
           <div class="col-md-12" id="head_text">
             <h2>Kezdő és haladó tanfolyamok alsó és felső tagozatosoknak</h2>
             <p>
@@ -19,31 +18,21 @@
             <p>Alacsony létszámú csoportjainkban, több lehetőség nyílik a nyelvgyakorlásra, illetve az írásos és szóbeli kommunikáció fejlesztésére.</p>
             <p>Módszerünk segít abban, hogy biztos nyelvtudás és sikeres nyelvvizsga legyen a végeredmény.</p>
 
-
             <div id="language_holder">
-                <div id="english"></div>
-                <div id="german"></div>
+              <div id="english"></div>
+              <div id="german"></div>
             </div>
 
-
             <router-link to="/apply" tag="button" class="reg_btn">Előjelentkezés</router-link>
-            <router-link to="/gyik" tag="button" class="gyik_btn">Gyakori kérdések</router-link>
-
-
-
+            <router-link to="/gyik" tag="button" class="gyik_btn">GYIK</router-link>
           </div>
-
-
-
-
         </div>
       </div>
     </div>
-    <div class="mandatory">
+        <div class="mandatory">
       ©2020 Junior Akadémia
       <br />
-      <router-link to="/DataManagementStatement/aszf">ÁSZF</router-link>
-      <router-link to="/DataManagementStatement/adatkezelesinyilatkozat">Adatkezelési Nyilatkozat</router-link>
+      <router-link to="/DataManagementStatement/">ÁSZF és Adatkezelesi Nyilatkozat</router-link>
     </div>
   </div>
 </template>
@@ -61,6 +50,10 @@ export default {};
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0);
+}
+
+.container{
+  max-width: 800px;
 }
 
 h1 {
@@ -83,9 +76,11 @@ h1 {
 #head_kep
 {
   border-radius: 10px 10px 0px 0px;
-  height: 450px;
+  height: 40vw;
+  max-height: 400px;
   background-image: url("../assets/english.jpg");
   background-size: cover;
+  background-position-x: center;
   margin-bottom: 0px;
 }
 
@@ -109,9 +104,24 @@ h1 {
   float: right;
 }
 
+.gyik_btn, .reg_btn {
+  width: 180px;
+}
+
 @media screen and (max-width: 500px){
   .gyik_btn, .reg_btn {
     font-size: 16px;
-}
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 45%;
+}}
+
+@media screen and (max-width: 350px){
+  .gyik_btn {
+    width: 80px;
+  }
+  .reg_btn {
+    width: calc(100% - 80px - 20px);
+  }
 }
 </style>

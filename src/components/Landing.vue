@@ -53,8 +53,7 @@
     <div class="mandatory">
       ©2020 Junior Akadémia
       <br />
-      <router-link to="/DataManagementStatement/aszf">ÁSZF</router-link>
-      <router-link to="/DataManagementStatement/adatkezelesinyilatkozat">Adatkezelési Nyilatkozat</router-link>
+      <router-link to="/DataManagementStatement/">ÁSZF és Adatkezelesi Nyilatkozat</router-link>
     </div>
   </div>
 </template>
@@ -139,17 +138,20 @@ export default {};
 
 @media screen and (max-width: 750px) {
   .description h2 {
+    
     margin-top: 90px;
     margin-bottom: 10px;
     font-size: 20px;
   }
 
   .description {
+    width: 55%;
+    margin-top: 20px;
     margin-right: 50px;
   }
 
   .description p {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 

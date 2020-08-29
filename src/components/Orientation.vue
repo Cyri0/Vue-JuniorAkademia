@@ -5,9 +5,9 @@
       <h2 class="fade-in">Hamarosan...</h2>
     </div>
     <div class="mandatory">
-      ©2020 Junior Akadémia <br>
-      <router-link to="/DataManagementStatement/aszf">ÁSZF</router-link>
-      <router-link to="/DataManagementStatement/adatkezelesinyilatkozat">Adatkezelési Nyilatkozat</router-link>
+      ©2020 Junior Akadémia
+      <br />
+      <router-link to="/DataManagementStatement/">ÁSZF és Adatkezelesi Nyilatkozat</router-link>
     </div>
   </div>
 </template>

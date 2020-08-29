@@ -56,7 +56,8 @@
                   v-model="type"
                 >
                   <option value="language" data-foo="language">Nyelvek</option>
-                  <option balue="elokeszito" data-foo="elokeszito">Felvételi előkészítő</option>
+                  <option value="elokeszito" data-foo="elokeszito">Felvételi előkészítő</option>
+                  <option value="robotika" data-foo="robotika">Mérnöki Alapozó</option>
                 </select>
               </div>
 
@@ -119,8 +120,7 @@
     <div class="mandatory">
       ©2020 Junior Akadémia
       <br />
-      <router-link to="/DataManagementStatement/aszf">ÁSZF</router-link>
-      <router-link to="/DataManagementStatement/adatkezelesinyilatkozat">Adatkezelési Nyilatkozat</router-link>
+      <router-link to="/DataManagementStatement/">ÁSZF és Adatkezelesi Nyilatkozat</router-link>
     </div>
   </div>
 </template>
@@ -139,6 +139,7 @@ export default {
       type: "",
       narrow_type: "",
       comment: "",
+      phone:"",
       sended: false,
       prepareHide: true,
       campHide: false
@@ -149,6 +150,12 @@ export default {
       if (e.target.options.selectedIndex > -1) {
         let selectedType =
           e.target.options[e.target.options.selectedIndex].dataset.foo;
+
+        if (selectedType === "robotika") {
+          this.campHide = true;
+          this.prepareHide = true;
+          this.narrow_type = "mernoki elokeszito"
+        }
 
         if (selectedType === "elokeszito") {
           this.campHide = true;
@@ -169,6 +176,7 @@ export default {
         template_params: {
           name: this.name,
           email: this.email,
+          phone: this.phone,
           kids_class: this.kids_class,
           narrow_type: this.narrow_type,
           comment: this.comment

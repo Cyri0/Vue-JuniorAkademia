@@ -2,9 +2,11 @@
   <div id="app">
     <vue-headful title="Junior Akadémia" />
     <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
-      <a class="navbar-brand" href="#">
-        <img class="navbar_logo" src="./assets/logo.png" />
-      </a>
+
+      <router-link class="navbar-brand" to="/">
+              <img class="navbar_logo" src="./assets/logo.png" />
+      </router-link>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -20,13 +22,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto" style="text-align: center;">
           <li class="nav-item">
-            <router-link to="/">Főoldal</router-link>
+            <router-link to="/" data-toggle="collapse" data-target=".navbar-collapse.show">Főoldal</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/about">Rólunk</router-link>
+            <router-link to="/about" data-toggle="collapse" data-target=".navbar-collapse.show">Rólunk</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/matric">Felvételi előkészítők</router-link>
+            <router-link to="/matric" data-toggle="collapse" data-target=".navbar-collapse.show">Felvételi előkészítők</router-link>
           </li>
 
           <!-- <li class="nav-item">
@@ -34,16 +36,16 @@
           </li>-->
 
           <li class="nav-item">
-            <router-link to="/orientation">Pályaorientáció</router-link>
+            <router-link to="/orientation" data-toggle="collapse" data-target=".navbar-collapse.show">Pályaorientáció</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/robotics">Robotika</router-link>
+            <router-link to="/robotics" data-toggle="collapse" data-target=".navbar-collapse.show">Mérnöki Alapozó</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/languages">Nyelvek</router-link>
+            <router-link to="/languages" data-toggle="collapse" data-target=".navbar-collapse.show">Nyelvek</router-link>
           </li>
         </ul>
-        <router-link to="/apply" tag="button" class="apply_btn">Jelentkezés</router-link>
+        <router-link to="/apply" tag="button" id="apply_btn" class="apply_btn" data-toggle="collapse" data-target=".navbar-collapse.show">Jelentkezés</router-link>
       </div>
     </nav>
 
@@ -142,12 +144,13 @@ background: linear-gradient(180deg, rgba(100,179,80,1) 0%, rgba(149,179,80,1) 10
 
   font-size: 18px;
   line-height: 100%;
-
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
+
+
 }
 
 .nav-item a {
@@ -161,6 +164,11 @@ background: linear-gradient(180deg, rgba(100,179,80,1) 0%, rgba(149,179,80,1) 10
   text-decoration: none;
 }
 
+
+#navbar {
+  height: 130px;
+}
+
 .apply_btn {
   background-color: rgba(255, 255, 255, 0);
   border: 3px solid var(--my_green);
@@ -170,14 +178,11 @@ background: linear-gradient(180deg, rgba(100,179,80,1) 0%, rgba(149,179,80,1) 10
   margin: auto;
 }
 
-#navbar {
-  height: 130px;
-}
-
 .apply_btn:hover {
   background-color: var(--my_green);
   color: white;
 }
+
 
 #navbarSupportedContent {
   margin-left: 15vw;
@@ -193,6 +198,12 @@ background: linear-gradient(180deg, rgba(100,179,80,1) 0%, rgba(149,179,80,1) 10
   #navbar {
   height: auto;
 }
+
+#apply_btn{
+  width: 200px;
+  margin-left: calc(50% - 100px);
+}
+
 }
 
 .mandatory {
