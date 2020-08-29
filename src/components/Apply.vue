@@ -12,7 +12,7 @@
           <div class="col-lg-12"></div>
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="name">*Név</label>
+              <label for="name">*Szülő neve</label>
               <input
                 required
                 type="text"
@@ -22,6 +22,7 @@
                 id="name"
                 aria-describedby="name"
               />
+
               <label for="email">*Email</label>
               <input
                 required
@@ -91,6 +92,20 @@
           <div class="col-sm-6">
             <form>
               <div class="form-group">
+
+              <label for="kidname">*Gyermek neve</label>
+              <input
+                required
+                type="text"
+                v-model="kidname"
+                class="form-control"
+                name="kidname"
+                id="kidname"
+                aria-describedby="kidname"
+              />
+
+
+
                 <label for="typeSelector">*Hányadik osztályos a gyermeke?</label>
                 <select class="form-control" id="classSelector" v-model="kids_class" required>
                   <option>4</option>
@@ -141,6 +156,7 @@ export default {
       narrow_type: "",
       comment: "",
       phone: "",
+      kidname:"",
       sended: false,
       prepareHide: true,
       campHide: false
@@ -180,7 +196,8 @@ export default {
           phone: this.phone,
           kids_class: this.kids_class,
           narrow_type: this.narrow_type,
-          comment: this.comment
+          comment: this.comment,
+          kidname: this.kidname
         }
       };
 
@@ -192,11 +209,12 @@ export default {
         contentType: "application/json"
       })
         .done(function() {
-          alert("Your mail is sent!");
+          alert("Az üzenetet elküldtük!");
+          location.reload();
           this.sended = true;
         })
         .fail(function(error) {
-          alert("Oops... " + JSON.stringify(error));
+          alert("Probléma adódott... " + JSON.stringify(error));
         });
     }
   }
