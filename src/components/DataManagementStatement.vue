@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <h1>ÁSZF és Adatkezelési Nyiltkozat</h1>
+  <div class="container">
+    <h1>ÁSZF és Adatkezelési Nyilatkozat</h1>
 
     <p>
       <strong>A. Bevezetés</strong>
     </p>
     <ol>
       <li>Nagyon fontos számunkra a weboldalunk látogatói személyes adatainak védelme, és elkötelezettek vagyunk ennek megfelelő biztosítása mellett. Ez az adatvédelmi nyilatkozat tájékoztatást nyújt arról, hogy hogyan kezeljük az Ön személyes adatait.</li>
-      <li>Ha hozzájárul a sütik használatához a jelen adatvédelmi nyilatkozat feltételeinek megfelelően, amikor először látogatja meg weboldalunkat, azzal engedélyezi számunkra a sütik használatát minden egyes alkalommal, amikor Ön meglátogatja weboldalunkat.</li>
+      <!-- <li>Ha hozzájárul a sütik használatához a jelen adatvédelmi nyilatkozat feltételeinek megfelelően, amikor először látogatja meg weboldalunkat, azzal engedélyezi számunkra a sütik használatát minden egyes alkalommal, amikor Ön meglátogatja weboldalunkat.</li> -->
     </ol>
     <p>
       <strong>B. Forrás</strong>
@@ -21,8 +21,8 @@
     <ol>
       <li>a számítógépével kapcsolatos információkat, beleértve az Ön IP-címét, a földrajzi tartózkodási helyét, a böngészője típusát és verzióját, valamint az operációs rendszerét;</li>
       <li>információkat a weboldalunk meglátogatásáról és annak használatáról, ideértve a küldő hivatkozás adatait, a látogatás hosszát, az oldalmegtekintéseket és a weboldalon a navigáció adatait;</li>
-      <li>a weboldalunkon a regisztrációkor megadott információkat, például az e-mail címét;</li>
-      <li>a weboldalunkon a profil létrehozásakor megadott információkat — például: a neve, profilképe, neme, születésnapja, kapcsolata állapota, érdeklődési körei és hobbijai, oktatási és foglalkoztatási adatai;</li>
+      <!-- <li>a weboldalunkon a regisztrációkor megadott információkat, például az e-mail címét;</li> -->
+      <!-- <li>a weboldalunkon a profil létrehozásakor megadott információkat — például: a neve, profilképe, neme, születésnapja, kapcsolata állapota, érdeklődési körei és hobbijai, oktatási és foglalkoztatási adatai;</li> -->
       <li>a weboldalunkon az e-mailes levelezőlistára és/vagy hírleveleinkre feliratkozáskor megadott információkat, például: a neve, e-mail címe;</li>
       <li>a weboldalunkon a szolgáltatásaink igénybevételekor megadott információkat;</li>
       <li>a weboldalunk használata közben keletkező információkat, többek között, hogy mikor, milyen gyakran és milyen körülmények között használja weboldalunkat;</li>
@@ -40,9 +40,9 @@
       <li>a weboldalunk és a vállalkozásunk adminisztrálása;</li>
       <li>a weboldalunk testreszabása az Ön számára;</li>
       <li>a weboldalunkon található szolgáltatások elérhetővé tétele az Ön számára</li>
-      <li>a weboldalunkon keresztül megvásárolt áruk postázása az Ön részére;</li>
-      <li>a weboldalunkon keresztül megvásárolt szolgáltatások nyújtása az Ön részére;</li>
-      <li>számlák és fizetési emlékeztetők küldése, és Öntől a befizetések begyűjtése;</li>
+      <!-- <li>a weboldalunkon keresztül megvásárolt áruk postázása az Ön részére;</li> -->
+      <!-- <li>a weboldalunkon keresztül megvásárolt szolgáltatások nyújtása az Ön részére;</li> -->
+      <!-- <li>számlák és fizetési emlékeztetők küldése, és Öntől a befizetések begyűjtése;</li> -->
       <li>nem marketing célú kereskedelmi kommunikáció küldése az Ön részére;</li>
       <li>olyan e-mail értesítések küldése Önnek, amelyeket Ön kifejezetten kért;</li>
       <li>e-mail hírlevelünk küldése Önnek, ha azt igényelte (bármikor értesíthet minket, ha már nem kéri a hírlevelet);</li>
@@ -85,13 +85,13 @@
     <ol>
       <li>A jelen G. szakasz tájékoztat az adatmegőrzési irányelveinkről és eljárásainkról, amelyek célja annak biztosítása, hogy a személyes adatok megőrzésére és törlésére vonatkozó jogi kötelezettségeinknek megfelelően járjunk el.</li>
       <li>A személyes adatokat, amelyeket bármilyen célból vagy célokból feldolgozunk, tilos annál hosszabb ideig megőrizni, mint amennyi ideig szükséges a tárolásuk ehhez a célhoz vagy célokhoz.</li>
-      <li>
+      <!-- <li>
         A G-2. cikkely sérelme nélkül, általában az alábbiakban meghatározott kategóriákba tartozó személyes adatokat töröljük az alábbiakban megadott dátumban/időpontban:
         <ol type="a">
           <li>a személyes adattípus törlése ekkor történik meg: {DÁTUM/IDŐPONT}; valamint</li>
           <li>{TOVÁBBI DÁTUMOK/IDŐPONTOK}.</li>
         </ol>
-      </li>
+      </li> -->
       <li>
         A G. szakasz egyéb rendelkezéseinek sérelme nélkül, a személyes adatokat tartalmazó dokumentumokat (beleértve az elektronikus dokumentumokat is) az alábbiaknak megfelelően megőrizzük:
         <ol type="a">
@@ -107,9 +107,9 @@
     <ol>
       <li>Megtesszük a megfelelő technikai és szervezeti óvintézkedéseket annak érdekében, hogy megakadályozzuk a személyes adatai elvesztését, a velük való visszaélést vagy a módosításukat.</li>
       <li>Minden, az Ön által megadott személyes információt biztonságos (jelszóval és tűzfallal védett) szervereinken tároljuk.</li>
-      <li>A weboldalunkon keresztül lebonyolított összes elektronikus pénzügyi tranzakciót titkosítással védjük.</li>
+      <!-- <li>A weboldalunkon keresztül lebonyolított összes elektronikus pénzügyi tranzakciót titkosítással védjük.</li> -->
       <li>Ön tudomásul veszi, hogy az információ továbbítása az interneten keresztül alapvetően bizonytalan jellegű, és nem garantálhatjuk az interneten keresztül továbbított adatok biztonságát.</li>
-      <li>Ön felelős a weboldalunk eléréséhez használt jelszava bizalmas kezeléséért; nem kérjük el a jelszavát (kivéve, amikor bejelentkezik weboldalunkra).</li>
+      <!-- <li>Ön felelős a weboldalunk eléréséhez használt jelszava bizalmas kezeléséért; nem kérjük el a jelszavát (kivéve, amikor bejelentkezik weboldalunkra).</li> -->
     </ol>
     <p>
       <strong>I. Módosítások</strong>
@@ -120,8 +120,8 @@
     </p>
     <p>Felszólíthat minket arra, hogy bocsássunk rendelkezésére minden személyes információt, amely nálunk elérhető Önről; az ilyen információk szolgáltatása a következő feltételek mellett történik:</p>
     <ol>
-      <li>a szükséges díj befizetése ({DÍJ ÖSSZEGE, HA RELEVÁNS}); és</li>
-      <li>az Ön személyazonosságának a megfelelő módon történő igazolása ({ÍRJA ÁT A SZÖVEGET A MEGFELELŐ MÓDON ebből a célból; általában elfogadjuk útlevelének fénymásolatát, amelyet közjegyző hitelesít, közüzemi számla olyan eredeti példányával együtt, amely tartalmazza az Ön jelenlegi lakcímét}).</li>
+      <!-- <li>a szükséges díj befizetése ({DÍJ ÖSSZEGE, HA RELEVÁNS}); és</li> -->
+      <li>az Ön személyazonosságának a megfelelő módon történő igazolása (ebből a célból; általában elfogadjuk útlevelének fénymásolatát, amelyet közjegyző hitelesít, közüzemi számla olyan eredeti példányával együtt, amely tartalmazza az Ön jelenlegi lakcímét}).</li>
     </ol>
     <p>A törvény által megengedett mértékben visszatarthatjuk az Ön által kért személyes információkat.</p>
     <p>Bármikor felszólíthat bennünket arra, hogy marketing célból ne dolgozzuk fel személyes adatait.</p>
@@ -137,12 +137,12 @@
     <p>
       <strong>M. Sütik</strong>
     </p>
-    <p>Weboldalunk sütiket alkalmaz. A süti egy azonosítót (betűket és számokat) tartalmazó fájlnak felel meg, amelyet a webszerver küld a webböngészőnek, és amelyet a böngésző eltárol. Ezután megtörténik az azonosító visszaküldése a szerverhez minden alkalommal, amikor a böngésző lekér egy adott oldalt a szerverről. A sütik lehetnek „tartós” vagy „munkamenet” sütik: a tartós sütiket a böngésző tárolja, és a megadott lejárati időpontig érvényben maradnak, kivéve, ha a felhasználó a lejárati idő előtt törli őket; a munkamenet süti ezzel szemben lejár a felhasználói munkamenet végén, amikor a böngészőt bezárja a felhasználó. A sütik általában nem tartalmaznak olyan információt, amely által személyesen azonosítható lenne a felhasználó, azonban az Önről általunk tárolt személyes adatok kapcsolódhatnak a sütikben tárolt illetve a sütikből kiolvasható információkhoz. {VÁLASSZA KI A MEGFELELŐ KIFEJEZÉST Weboldalunkon kizárólag munkamenet sütiket / kizárólag tartós sütiket / munkamenet sütiket és tartós sütiket is használunk.}</p>
+    <p>A süti egy azonosítót (betűket és számokat) tartalmazó fájlnak felel meg, amelyet a webszerver küld a webböngészőnek, és amelyet a böngésző eltárol. Ezután megtörténik az azonosító visszaküldése a szerverhez minden alkalommal, amikor a böngésző lekér egy adott oldalt a szerverről. A sütik lehetnek „tartós” vagy „munkamenet” sütik: a tartós sütiket a böngésző tárolja, és a megadott lejárati időpontig érvényben maradnak, kivéve, ha a felhasználó a lejárati idő előtt törli őket; a munkamenet süti ezzel szemben lejár a felhasználói munkamenet végén, amikor a böngészőt bezárja a felhasználó. A sütik általában nem tartalmaznak olyan információt, amely által személyesen azonosítható lenne a felhasználó, azonban az Önről általunk tárolt személyes adatok kapcsolódhatnak a sütikben tárolt illetve a sütikből kiolvasható információkhoz. Weboldalunk csak Google Analytics sütiket használ.</p>
     <ol>
       <li>
         Az általunk a weboldalunkon alkalmazott sütik nevét, valamint azok felhasználási céljait az alábbiakban ismertetjük:
         <ol type="a">
-          <li>a weboldalunkon a Google Analytics és az Adwords szoftverek segítségével a számítógép felismerése, amikor egy felhasználó {ADJA HOZZÁ AZ ÖSSZES FELHASZNÁLÁSI CÉLT meglátogatja a weboldalt / a felhasználók nyomon követése, miközben navigálnak a weboldalon / a kosár használatának lehetősége a weboldalon / a weboldal használhatóságának javítása / a weboldal használatának elemzése / a weboldal adminisztrálása / a csalások megakadályozása és a weboldal biztonságának javítása / a weboldal testreszabása minden egyes felhasználó számára / a célzott reklámok használata, amelyek adott felhasználók számára különösen érdekesek lehetnek, / további célok leírása};</li>
+          <li>a weboldalunkon a Google Analytics és az Adwords szoftverek segítségével a számítógép felismerése, amikor egy felhasználó meglátogatja a weboldalt, a weboldal használhatóságának javítása, a csalások megakadályozása és a weboldal biztonságának javítása;</li>
         </ol>
       </li>
       <li>
@@ -169,9 +169,12 @@
       </li>
       <li>Ha törli a sütiket, akkor sok weboldal használhatósága romlani fog.</li>
     </ol>
-    <p>
-      <em>A Website Planet nem vállal felelősséget, és a jogi szakértőkkel való konzultációt javasolja, amennyiben a fenti sablont alkalmazza weboldalán.</em>
-    </p>
+
+    <br>
+    <br>
+    Junior Akadémia - 2020.
+        <br>
+    <br>
   </div>
 
 </template>

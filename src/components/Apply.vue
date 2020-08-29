@@ -104,8 +104,8 @@
             <br />
             <br />
             <br />Az
-            <b>"Elküldöm"</b> gombra kattintva ön elfogadja az
-            <a href="#">Adatkezelési Nyilatkozatot</a>!
+            <b>"Elküldöm"</b> gombra kattintva ön elfogadja az 
+            <router-link to="/DataManagementStatement/">Adatkezelesi Nyilatkozatot</router-link>!
             <button
               class="btn btn-success right_float"
               id="send_btn"
